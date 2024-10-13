@@ -38,15 +38,37 @@
         </div>
         <div class="mobile-menu.is-open" data-menu>
             <div class="container mobile-menu-container" data-menu-close>
-                <button class="mobile-menu-close">Close</button>
-                <nav>Navigation</nav>
+                <button class="mobile-menu-close" type="button">
+                    <svg class="mobile-icon-close" width="8" height="8">
+                        <use href="./images/symbol-defs1#icon-close-sign.svg"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-nav-menu">
+                    <ul class="mobile-list-menu">
+                        <li class="mobile-nav">
+                            <a href="./index.html" class="mobile-link-menu">
+                                
+                            </a>
+                        </li>
+                        <li class="mobile-nav">
+                            <a href="./index.html" class="mobile-link-menu">
+                               
+                            </a>
+                        </li>
+                        <li class="mobile-nav">
+                            <a href="./index.html" class="mobile-link-menu">
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <address>Address</address>
                 <div>Soc link</div>
             </div>
         </div>
     </header>
     <main>
-        <section class="intro-section ">
+        <section class="intro-section hidden">
             <div class="container">
                 <h1 class="intro-title">
                     Effective Solutions
@@ -386,7 +408,7 @@
         </section>
     </main>
     
-    <footer class="footer hidden">
+    <footer class="footer">
         <div class="container footer-container">
             <div class="footer-logo-text">
                 <a href="./index.html" class="footer-logo">Web <span class="footer-logo-studio">Studio</span></a>
