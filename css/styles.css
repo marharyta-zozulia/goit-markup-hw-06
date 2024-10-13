@@ -362,9 +362,15 @@ fill: #200404;
     padding-top: 72px;
     padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/people-office@1x.jpg);}
+@media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {.intro-section 
+                    background-image: linear-gradient(Irgba(46, 47, 66, 0.7),
+                            • rgba(46, 47, 66, 0.7)) url(' ../images/people-office@2x.jpg');
+                }
+            
 
-}
 
 .intro-title {
     font-weight: 700;
@@ -425,7 +431,7 @@ srcset="./images/images/people-office-small.jpg 1x,
     .intro-section{
         padding: 112px 0;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), url(../images/people-office-small.jpg);  
+            rgba(46, 47, 66, 0.7)), url(../images/people-office-small@1x.jpg);  
     }
 
 }
@@ -439,11 +445,14 @@ srcset="./images/images/people-office-small.jpg 1x,
         font-size: 56px;
         line-height: 1.07;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/people-office-medim.jpg);
-        <source media="(min-width: 768px)" srcset="./images/images/people-office-small.jpg 1x,
-         ./images/people-office-big.jpg 2x" />
-                   
-    
+                    rgba(46, 47, 66, 0.7)), url(../images/people-office-medim@1x.jpg);}
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .intro-section {
+                    background-image: linear-gradient(Irgba(46, 47, 66, 0.7),
+                            • rgba(46, 47, 66, 0.7)) url(' ../images/people-office@2x.jpg');
+                }
     }
 }
 
@@ -454,11 +463,14 @@ srcset="./images/images/people-office-small.jpg 1x,
         padding-top: 188px;
         padding-bottom: 188px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/people-office-big.jpg);
+                    rgba(46, 47, 66, 0.7)), url(../images/people-office-big@1x.jpg);}
 
-        <source media="(min-width: 1158px)"
-            srcset="./images/images/people-office-small.jpg 1x, 
-         ./images/people-office-big.jpg 2x" />
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .intro-section{background-image: linear-gradient(Irgba(46, 47, 66, 0.7),
+                    • rgba(46, 47, 66, 0.7)) url(' ../images/people-office@2x.jpg');
+        }
     }
         .hero-title {
             margin-bottom: 48px;
