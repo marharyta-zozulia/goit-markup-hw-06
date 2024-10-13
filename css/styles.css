@@ -470,11 +470,12 @@ srcset="./images/images/people-office-small.jpg 1x,
 .features-section {
     padding-top: 96px;
     padding-bottom: 96px;
-    margin: 0 auto;
+   
 }
 .feature-item{
      width: 100%; 
     position: relative;
+   
    
 
 }
@@ -485,10 +486,12 @@ srcset="./images/images/people-office-small.jpg 1x,
     flex-wrap: wrap;
     gap: 72px;
    
+
+   
 }
 .features-item-icon-wrapper {
-    display: none;
-}
+    display: none;}
+    
 .features-item-title{
     text-align: center;
         margin-bottom: 8px;
@@ -497,6 +500,7 @@ srcset="./images/images/people-office-small.jpg 1x,
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        text-align: center;
 }
 .features-item-description{
     font-size: 16px;
@@ -511,21 +515,27 @@ srcset="./images/images/people-office-small.jpg 1x,
 @media screen and (min-width: 768px){
     .features-section{
        width: 768px;
+    padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
     }
      .features-list {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 72px 24px;
+        
+            
            
         }
     .features-item-title{
         text-align: left;
         padding-left: 16px;
             padding-right: 16px;
+       
     }
    
-
 
     .features-item{
         width: calc((100% - 24px) / 2);
@@ -536,6 +546,8 @@ srcset="./images/images/people-office-small.jpg 1x,
         width: calc((100% - 24px) / 2);
         padding-left: 16px;
         padding-right: 16px;
+        font-weight: 400;
+        width: 100%;
         
 }
 }
@@ -544,6 +556,8 @@ srcset="./images/images/people-office-small.jpg 1x,
     .features-section {
             padding-top: 120px;
             padding-bottom: 120px;
+            margin: 0 auto;
+            /* width: 100%; */
         }
     
         .features-list {
@@ -575,6 +589,7 @@ srcset="./images/images/people-office-small.jpg 1x,
 
 .team-section {
     background-color: #f4f4fd;
+    
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -588,6 +603,9 @@ margin-left: auto;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+}
+.member-info{
+    display: block;
 }
 
 .team-list {
@@ -623,6 +641,8 @@ text-align: center;
 .icon-item {
     width: 40px;
     height: 40px;
+    margin-bottom: 32px;
+
 
 }
 
@@ -820,8 +840,8 @@ text-align: center;
         color: #2e2f42;
 }
 .portfolio-title{
-    margin-left: auto;
-        margin-right: auto;
+    /* margin-left: auto;
+        margin-right: auto; */
         margin-bottom: 72px;
         text-transform: capitalize;
         font-size: 36px;
@@ -833,6 +853,7 @@ text-align: center;
 
 .portfolio-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -892,7 +913,10 @@ position: absolute;
         }
     
         .portfolio-list {
-            gap: 48px 24px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 48px ;
         }
     
         .portfolio-item {
@@ -905,8 +929,7 @@ position: absolute;
 /* -----footer---- */
 
 .footer {
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
+    
     background-color: #2e2f42;
     padding: 96px 0;
 
@@ -1047,6 +1070,22 @@ position: absolute;
 @media screen and (min-width: 768px){
   .footer-container{
     width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 108px;
     
+  }
+  .footer-form{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 72px;
+       
+        
+       
+        
   }
 }
