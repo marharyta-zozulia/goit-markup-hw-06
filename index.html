@@ -35,17 +35,18 @@
                             111-11-11</a></li>
                 </ul>
             </address>
-            <button class="burger-btn" type="button" data-menu-open >
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/symbol-defs1.svg#icon-menu-icon"></use>
+                </svg>
             </button>
+            </div>
         </div>
 
 
 
         <!-- -----MENU----- -->
-        <div id="mobile-menu" class="mobile-menu" data-menu>
+        <div id="mobile-menu is-open" class="mobile-menu" data-menu>
             <div class="container mobile-menu-container" data-menu-close>
                 <button class="mobile-menu-close" type="button" >
                     <svg class="mobile-icon-close modal-close-icone" width="8" height="8">
@@ -483,7 +484,7 @@
                 <p class="footer-part">Subscribe</p>
                 <form class="footer-form-field">
                     <label class="footer-form-label" for="email">
-                        <input class="footer-form-input" name="email" id="email" type="email" placeholder="E-mail" />
+                        <input class="footer-form-input" name="email" id="email" type="email" placeholder="E-mail" required/>
                     </label>
                     <button class="footer-form-btn" type="submit">
                         Subscribe
@@ -498,8 +499,8 @@
     </footer>
 
 
-    <div id="content-shadow"  class="content-shadow" style="display: none;"></div>
-    <div class="backdrop hidden">
+    <div id="content-shadow"  class="content-shadow"  ></div>
+    <div class="backdrop >
         <div class="modal">
             <button class="modal-close-btn" type="button" >
                 <svg class="modal-close-icone" width="8" height="8">

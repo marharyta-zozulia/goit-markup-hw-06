@@ -328,14 +328,17 @@ p {
 
 .mobile-menu {
     opacity: 0;
+    visibility: hidden;
+        pointer-events: none;
 }
 
-.open {
+
+.mobile-menu.is-open{
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
-    visibility: inherit;
-    margin-top: 50px;
 }
+
 
 .mobile-menu-container {
     position: relative;
@@ -370,8 +373,18 @@ p {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
+.mobile-nav-menu{
+    margin-bottom: auto;
+}
+
 .mobile-llink-studio {
     color: #404bbf;
+}
+
+.mobile-list-menu{
+display: flex;
+    gap: 40px;
+    flex-direction: column;
 }
 
 .mobile-link-menu {
@@ -1148,9 +1161,21 @@ p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 108px;
+        padding-left: 108px; 
+         padding-right: 108px;
+        justify-content: center;
+            align-items: center;
+        
 
     }
+    .footer-logo-text{
+        /* padding-left: 108px; */
+        gap: 24px;
+    }
+    .footer-description{
+       width: 264px;
+    }
+
 
     .footer-form {
        
@@ -1160,17 +1185,33 @@ p {
         gap: 24px;
         row-gap: 72px;
     }
+
+    .footer-icons{
+       
+    }
+    .social-media{ margin: 0;
+        
+    }
+    .footer-logo{}
+
+    .footer-description{
+    
+    }
 }
 
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+@media screen and (max-width: 1158x){
+    .footer-container{
+        align-items: baseline;
+        gap: 0;
+        row-gap: 0;
+        flex-wrap: nowrap;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1158px;
+        margin: 0 auto;}
+
 }
+
 
 
 .section1 {
@@ -1221,7 +1262,7 @@ p {
     background-color: #3b3b3be3;
 }
 
-/* .backdrop {
+.backdrop {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -1231,7 +1272,7 @@ p {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+}
 
 .is-open {
     opacity: 1;
@@ -1412,6 +1453,7 @@ p {
 .modal-field-wrap-checkbox {
     margin-bottom: 24px;
 }
+
 
 .modal-checkbox-link {
     color: #4d5ae5;
